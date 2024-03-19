@@ -1,7 +1,7 @@
 APIKYE = 'c4b469446da64a62a7455412241903';
 
 
-// API = `http://api.weatherapi.com/v1/current.json?key=c4b469446da64a62a7455412241903&q=London&aqi=yes`
+// API = `https://api.weatherapi.com/v1/current.json?key=c4b469446da64a62a7455412241903&q=London&aqi=yes`
 
 const searchBtn = document.getElementById('searchBtn');
 const cityInput = document.getElementById('cityInput');
@@ -17,7 +17,7 @@ const sup = document.getElementById('sup')
 
 
 async function getData(KYE, cityName){
-    const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=${KYE}&q=${cityName}&aqi=yes`);
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=${KYE}&q=${cityName}&aqi=yes`);
     return await promise.json();
 }
 
